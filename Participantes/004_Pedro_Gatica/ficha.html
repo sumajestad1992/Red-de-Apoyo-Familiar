@@ -3,37 +3,172 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ficha de emergencia</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <title>Red de Apoyo Familiar - Pedro Gatica</title>
+
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
             background: #eef3f8;
-            padding: 25px;
+            color: #172033;
+            margin: 0;
+            padding: 20px 16px;
         }
+
         .tarjeta {
-            background: white;
             max-width: 420px;
-            margin: auto;
-            padding: 25px;
-            border-radius: 15px;
+            margin: 0 auto;
+            padding: 26px 24px;
+            background: white;
+            border: 1px solid #dce5ed;
             border-top: 8px solid #176b9a;
+            border-radius: 22px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
         }
-        h1 { color: #176b9a; }
-        p { line-height: 1.6; }
+
+        .encabezado {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .icono {
+            font-size: 29px;
+            color: #176b9a;
+        }
+
+        .titulo {
+            color: #176b9a;
+            font-size: 19px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .subtitulo {
+            font-size: 13px;
+            color: #666;
+            margin: 6px 0 0;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #e5e9ed;
+            margin: 24px 0;
+        }
+
+        h1 {
+            font-size: 27px;
+            margin: 0 0 10px;
+        }
+
+        .identificador {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .ubicacion {
+            font-size: 16px;
+            margin: 22px 0;
+        }
+
+        .contacto {
+            background: #edf6fc;
+            border-radius: 15px;
+            padding: 18px;
+            margin-top: 26px;
+        }
+
+        h2 {
+            color: #176b9a;
+            font-size: 18px;
+            margin: 0 0 16px;
+        }
+
+        .familiar {
+            font-size: 17px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .telefono {
+            display: inline-block;
+            background: #dff5e8;
+            color: #126b3c;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 10px 13px;
+            border-radius: 12px;
+            overflow-wrap: anywhere;
+        }
+
+        .apoyo {
+            margin-top: 30px;
+        }
+
+        .indicacion {
+            border: 1px solid #cbdce9;
+            border-radius: 12px;
+            padding: 14px;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .pie {
+            color: #777;
+            text-align: center;
+            font-size: 12px;
+            line-height: 1.5;
+        }
     </style>
 </head>
+
 <body>
-    <div class="tarjeta">
-        <h1>Ficha de emergencia</h1>
-        <p><strong>PROTOTIPO - DATOS FICTICIOS</strong></p>
-        <h2>Pedro Gatica</h2>
-        <p><strong>ID:</strong> 004</p>
-        <p><strong>Comuna:</strong> Ñuñoa</p>
-        <p><strong>Contacto:</strong> Marcela Silva</p>
-        <p><strong>Parentesco:</strong> Tía</p>
-        <p><strong>Telefono:</strong> No informado</p>
-        <p><strong>Indicaciones de apoyo:</strong> Acompañamiento en situaciones de estrés</p>
-    </div>
+    <main class="tarjeta">
+
+        <header class="encabezado">
+            <span class="icono">✚</span>
+            <div>
+                <p class="titulo">RED DE APOYO FAMILIAR</p>
+                <p class="subtitulo">
+                    Identificación y contacto de emergencia
+                </p>
+            </div>
+        </header>
+
+        <hr>
+
+        <h1>Pedro Gatica</h1>
+        <p class="identificador">
+            Identificador: 004
+        </p>
+
+        <p class="ubicacion">📍 Ñuñoa</p>
+
+        <section class="contacto">
+            <h2>☎ Contacto de emergencia</h2>
+            <p class="familiar">
+                Marcela Silva — Tía
+            </p>
+            <span class="telefono">+56 9 0000 0004</span>
+        </section>
+
+        <section class="apoyo">
+            <h2>▣ Indicaciones de apoyo</h2>
+            <div class="indicacion">Acompañamiento en situaciones de estrés</div>
+        </section>
+
+        <hr>
+
+        <footer class="pie">
+            Prototipo académico - Información ficticia
+        </footer>
+
+    </main>
 </body>
 </html>
